@@ -19,6 +19,15 @@ PODS:
   - DBDebugToolkit (0.5.0)
   - HockeySDK/CrashOnlyLib (5.1.4)
   - OCMock (3.4.3)
+  - PromiseKit (6.12.0):
+    - PromiseKit/CorePromise (= 6.12.0)
+    - PromiseKit/Foundation (= 6.12.0)
+    - PromiseKit/UIKit (= 6.12.0)
+  - PromiseKit/CorePromise (6.12.0)
+  - PromiseKit/Foundation (6.12.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.12.0):
+    - PromiseKit/CorePromise
   - SnapshotTesting (1.5.0)
   - SwiftCheck (0.12.0)
   - SwiftGen (6.1.0)
@@ -35,6 +44,7 @@ DEPENDENCIES:
   - DBDebugToolkit (~> 0.5)
   - HockeySDK/CrashOnlyLib (~> 5.1)
   - OCMock (~> 3.4)
+  - PromiseKit
   - SnapshotTesting (~> 1.5)
   - SwiftCheck (~> 0.12)
   - SwiftGen (~> 6.0)
@@ -52,6 +62,7 @@ SPEC REPOS:
     - DBDebugToolkit
     - HockeySDK
     - OCMock
+    - PromiseKit
     - SnapshotTesting
     - SwiftCheck
     - SwiftGen
@@ -71,6 +82,7 @@ SPEC CHECKSUMS:
   DBDebugToolkit: c04bb6f618051d3de447a4b4323f37826116cfed
   HockeySDK: 15afe6bc0a5bfe3a531fd73dbf082095f37dac3b
   OCMock: 43565190abc78977ad44a61c0d20d7f0784d35ab
+  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
   SnapshotTesting: 9ca1d80f6322509a035856170c11d0571b1f7171
   SwiftCheck: d1dd04d955cc76620b0f84e087536bd059a11c24
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
@@ -78,6 +90,6 @@ SPEC CHECKSUMS:
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
   Watchdog: 622647e6bc5a55665e6dbae0b7831ad8d95abeab
 
-PODFILE CHECKSUM: 5802c3f032c2377bbcdc536b85f069a4b7683234
+PODFILE CHECKSUM: 2e190c78a1a83c74f707e2f5c6e44641bd3aa7b0
 
 COCOAPODS: 1.8.4

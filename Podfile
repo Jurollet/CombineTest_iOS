@@ -15,6 +15,7 @@ target 'CombineTest' do
   pod 'HockeySDK', '~> 5.1', :subspecs => ['CrashOnlyLib']
   pod 'Watchdog', '~> 5.1'
   pod 'ADUtils', '~> 10'
+  pod 'PromiseKit'
   pod 'DBDebugToolkit', '~> 0.5', :configurations => ['Stubs', 'Preproduction']
 end
 

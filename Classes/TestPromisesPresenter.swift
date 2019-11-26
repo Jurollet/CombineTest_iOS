@@ -6,5 +6,9 @@
 //
 
 import Foundation
+import MapKit
 
-protocol TestPromisesPresenter {}
+protocol TestPromisesPresenter {
+    func start()
+    func updateRegion(_ region: MKMapRect)
+}

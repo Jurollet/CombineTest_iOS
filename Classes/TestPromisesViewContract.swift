@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol TestPromisesViewContract: class {}
+protocol TestPromisesViewContract: class {
+    func showUserLocation()
+}
