@@ -1,0 +1,10 @@
+xcassets:
+  inputs:
+    - ${PROJECT_DIR}/Resources/${PRODUCT_NAME}/
+  outputs:
+    - templatePath: ${PROJECT_DIR}/swiftgen/swiftgenTemplate.stencil
+      output: ${PROJECT_DIR}/Classes/Assets.swift
+      params:
+        enumName: _Asset
+        colorTypeName: _ColorAsset
+        imageTypeName: _ImageAsset
