@@ -12,6 +12,10 @@ import Swinject
 class InteractorAssembly: Assembly {
 
     func assemble(container: Container) {
-
+        container.register(GetBuildingsWithPromiseInteractor.self) { r in
+            GetBuildingsWithPromiseInteractorImplementation(
+                buildingsRepository: r.resolve(BuildingsRepository.self)!
+            )
+        }
     }
 }

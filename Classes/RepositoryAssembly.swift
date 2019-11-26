@@ -12,6 +12,8 @@ import Swinject
 class RepositoryAssembly: Assembly {
 
     func assemble(container: Container) {
-
+        container.register(BuildingsRepository.self) { _ in
+            BuildingsRepositoryImplementation()
+        }
     }
 }

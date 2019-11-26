@@ -9,4 +9,5 @@ import Foundation
 
 protocol TestPromisesViewContract: class {
     func showUserLocation()
+    func showBuildingsCount(countString: String)
 }

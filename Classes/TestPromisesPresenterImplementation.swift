@@ -10,12 +10,15 @@ import MapKit
 
 class TestPromisesPresenterImplementation: TestPromisesPresenter {
 
+    private let getBuildingsWithPromiseInteractor: GetBuildingsWithPromiseInteractor
     private lazy var locationManager = CLLocationManager()
 
     private weak var viewContract: TestPromisesViewContract?
 
-    init(viewContract: TestPromisesViewContract) {
+    init(viewContract: TestPromisesViewContract,
+         getBuildingsWithPromiseInteractor: GetBuildingsWithPromiseInteractor) {
         self.viewContract = viewContract
+        self.getBuildingsWithPromiseInteractor = getBuildingsWithPromiseInteractor
     }
 
     // MARK: - TestPromisesPresenter
@@ -29,6 +32,9 @@ class TestPromisesPresenterImplementation: TestPromisesPresenter {
     }
 
     func updateRegion(_ region: MKMapRect) {
-        print("\(region)")
+        let coordinates = MKCoordinateRegion(region)
+        _ = getBuildingsWithPromiseInteractor.execute(with: coordinates).done { [weak self] buildings in
+            self?.viewContract?.showBuildingsCount(countString: "\(buildings.count)")
+        }
     }
 }

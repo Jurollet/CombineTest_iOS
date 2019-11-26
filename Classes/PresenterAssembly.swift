@@ -16,8 +16,11 @@ class PresenterAssembly: Assembly {
             HomePresenterImplementation(viewContract: viewContract, delegate: delegate)
         }
 
-        container.register(TestPromisesPresenter.self) { _, viewContract in
-            TestPromisesPresenterImplementation(viewContract: viewContract)
+        container.register(TestPromisesPresenter.self) { r, viewContract in
+            TestPromisesPresenterImplementation(
+                viewContract: viewContract,
+                getBuildingsWithPromiseInteractor: r.resolve(GetBuildingsWithPromiseInteractor.self)!
+            )
         }
 
         container.register(TestCombinePresenter.self) { _, viewContract in

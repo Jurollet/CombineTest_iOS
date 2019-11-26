@@ -57,6 +57,12 @@
 		EA088E63238D588F00CCA3EA /* HomePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */; };
 		EA088E65238D589F00CCA3EA /* HomeViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E64238D589F00CCA3EA /* HomeViewContract.swift */; };
 		EA088E67238D58AA00CCA3EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E66238D58AA00CCA3EA /* HomeViewController.swift */; };
+		EA088E6C238DCA6D00CCA3EA /* GetBuildingsWithPromiseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E6B238DCA6D00CCA3EA /* GetBuildingsWithPromiseInteractor.swift */; };
+		EA088E6E238DCA8300CCA3EA /* GetBuildingsWithPromiseInteractorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E6D238DCA8300CCA3EA /* GetBuildingsWithPromiseInteractorImplementation.swift */; };
+		EA088E70238DCACD00CCA3EA /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E6F238DCACD00CCA3EA /* Building.swift */; };
+		EA088E74238DCBCF00CCA3EA /* BuildingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E73238DCBCF00CCA3EA /* BuildingsRepository.swift */; };
+		EA088E76238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */; };
+		EA088E78238DCBEC00CCA3EA /* RestBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E77238DCBEC00CCA3EA /* RestBuilding.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -133,6 +139,12 @@
 		EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterImplementation.swift; sourceTree = "<group>"; };
 		EA088E64238D589F00CCA3EA /* HomeViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContract.swift; sourceTree = "<group>"; };
 		EA088E66238D58AA00CCA3EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA088E6B238DCA6D00CCA3EA /* GetBuildingsWithPromiseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingsWithPromiseInteractor.swift; sourceTree = "<group>"; };
+		EA088E6D238DCA8300CCA3EA /* GetBuildingsWithPromiseInteractorImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingsWithPromiseInteractorImplementation.swift; sourceTree = "<group>"; };
+		EA088E6F238DCACD00CCA3EA /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		EA088E73238DCBCF00CCA3EA /* BuildingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsRepository.swift; sourceTree = "<group>"; };
+		EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsRepositoryImplementation.swift; sourceTree = "<group>"; };
+		EA088E77238DCBEC00CCA3EA /* RestBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestBuilding.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-CombineTestTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTestTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-CombineTestTests/Pods-CombineTestTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -205,6 +217,8 @@
 		495911531D7D4EFE0057C974 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E72238DCBAF00CCA3EA /* Repository */,
+				EA088E71238DCB9C00CCA3EA /* RestEntity */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -244,6 +258,7 @@
 		495911571D7D4F3A0057C974 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E6F238DCACD00CCA3EA /* Building.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -251,6 +266,7 @@
 		495911581D7D4F420057C974 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E73238DCBCF00CCA3EA /* BuildingsRepository.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -258,6 +274,7 @@
 		496C4D211F67BC3A00729B15 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E6A238DCA4E00CCA3EA /* GetBuildingsWithPromise */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -502,6 +519,31 @@
 				EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */,
 			);
 			name = Presenter;
+			sourceTree = "<group>";
+		};
+		EA088E6A238DCA4E00CCA3EA /* GetBuildingsWithPromise */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E6B238DCA6D00CCA3EA /* GetBuildingsWithPromiseInteractor.swift */,
+				EA088E6D238DCA8300CCA3EA /* GetBuildingsWithPromiseInteractorImplementation.swift */,
+			);
+			name = GetBuildingsWithPromise;
+			sourceTree = "<group>";
+		};
+		EA088E71238DCB9C00CCA3EA /* RestEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E77238DCBEC00CCA3EA /* RestBuilding.swift */,
+			);
+			name = RestEntity;
+			sourceTree = "<group>";
+		};
+		EA088E72238DCBAF00CCA3EA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */,
+			);
+			name = Repository;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -889,15 +931,18 @@
 				EA088E65238D589F00CCA3EA /* HomeViewContract.swift in Sources */,
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
+				EA088E78238DCBEC00CCA3EA /* RestBuilding.swift in Sources */,
 				EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */,
 				EA088E5A238D57E200CCA3EA /* TestCombinePresenter.swift in Sources */,
 				4959115A1D7D4FE70057C974 /* Coordinator.swift in Sources */,
 				EA088E4C238D3FF100CCA3EA /* TestPromisesViewController.swift in Sources */,
 				EA088E56238D57C800CCA3EA /* TestPromisesPresenter.swift in Sources */,
+				EA088E70238DCACD00CCA3EA /* Building.swift in Sources */,
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
 				E7CFD4B222F2F60B00C5B731 /* ModuleAssembly.swift in Sources */,
 				EA088E4E238D3FFF00CCA3EA /* TestPromisesViewContract.swift in Sources */,
 				57E1CD4D1C8890CA00A7DFFB /* Fonts.swift in Sources */,
+				EA088E76238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift in Sources */,
 				E7B4FDD222FDBF3000B39055 /* ViewStyle+Initialization.swift in Sources */,
 				EA088E50238D403500CCA3EA /* TestCombineViewContract.swift in Sources */,
 				49F7C9F81D0EDE7100086054 /* ADFileLoggerFormatter.m in Sources */,
@@ -913,7 +958,10 @@
 				49C385681F6831D00060D1E4 /* SharedNavigationController.swift in Sources */,
 				49C3856A1F68325C0060D1E4 /* SharedTabBarController.swift in Sources */,
 				57E1CD281C884F1C00A7DFFB /* SharedViewController.swift in Sources */,
+				EA088E6E238DCA8300CCA3EA /* GetBuildingsWithPromiseInteractorImplementation.swift in Sources */,
 				E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */,
+				EA088E6C238DCA6D00CCA3EA /* GetBuildingsWithPromiseInteractor.swift in Sources */,
+				EA088E74238DCBCF00CCA3EA /* BuildingsRepository.swift in Sources */,
 				EA088E61238D588200CCA3EA /* HomePresenter.swift in Sources */,
 				EA088E63238D588F00CCA3EA /* HomePresenterImplementation.swift in Sources */,
 				496E5C491DEEF9820050EFB6 /* HelperAssembly.swift in Sources */,

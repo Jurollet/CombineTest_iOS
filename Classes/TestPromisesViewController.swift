@@ -45,6 +45,10 @@ class TestPromisesViewController: SharedViewController,
         mapView.setVisibleMapRect(MKMapRect(origin: origin, size: size), animated: false)
     }
 
+    func showBuildingsCount(countString: String) {
+        buildingsLabel.text = countString
+    }
+
     // MARK: - MKMapViewDelegate
 
     func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
