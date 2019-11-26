@@ -53,6 +53,10 @@
 		EA088E58238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E57238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift */; };
 		EA088E5A238D57E200CCA3EA /* TestCombinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E59238D57E200CCA3EA /* TestCombinePresenter.swift */; };
 		EA088E5C238D57F000CCA3EA /* TestCombinePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E5B238D57F000CCA3EA /* TestCombinePresenterImplementation.swift */; };
+		EA088E61238D588200CCA3EA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E60238D588200CCA3EA /* HomePresenter.swift */; };
+		EA088E63238D588F00CCA3EA /* HomePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */; };
+		EA088E65238D589F00CCA3EA /* HomeViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E64238D589F00CCA3EA /* HomeViewContract.swift */; };
+		EA088E67238D58AA00CCA3EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E66238D58AA00CCA3EA /* HomeViewController.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +129,10 @@
 		EA088E57238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesPresenterImplementation.swift; sourceTree = "<group>"; };
 		EA088E59238D57E200CCA3EA /* TestCombinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombinePresenter.swift; sourceTree = "<group>"; };
 		EA088E5B238D57F000CCA3EA /* TestCombinePresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombinePresenterImplementation.swift; sourceTree = "<group>"; };
+		EA088E60238D588200CCA3EA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterImplementation.swift; sourceTree = "<group>"; };
+		EA088E64238D589F00CCA3EA /* HomeViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContract.swift; sourceTree = "<group>"; };
+		EA088E66238D58AA00CCA3EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-CombineTestTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTestTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-CombineTestTests/Pods-CombineTestTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -412,6 +420,8 @@
 		EA088E44238D3FA100CCA3EA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E5F238D587400CCA3EA /* Presenter */,
+				EA088E5D238D586400CCA3EA /* UI */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -466,6 +476,32 @@
 				EA088E4B238D3FF100CCA3EA /* TestPromisesViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EA088E5D238D586400CCA3EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E5E238D586C00CCA3EA /* ViewController */,
+				EA088E64238D589F00CCA3EA /* HomeViewContract.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EA088E5E238D586C00CCA3EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E66238D58AA00CCA3EA /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EA088E5F238D587400CCA3EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E60238D588200CCA3EA /* HomePresenter.swift */,
+				EA088E62238D588F00CCA3EA /* HomePresenterImplementation.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -848,6 +884,7 @@
 			files = (
 				496E5C411DEEF9620050EFB6 /* DependencyProvider.swift in Sources */,
 				E7B4FDD422FDC17F00B39055 /* ViewStyle+UIWindow.swift in Sources */,
+				EA088E65238D589F00CCA3EA /* HomeViewContract.swift in Sources */,
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
 				EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */,
@@ -866,6 +903,7 @@
 				49F7C9F51D0EDE6300086054 /* Logger.swift in Sources */,
 				57E1CD491C884F8900A7DFFB /* AppDelegate.swift in Sources */,
 				E7FC27C022F1DB0C00EED267 /* MainThreadMonitor.swift in Sources */,
+				EA088E67238D58AA00CCA3EA /* HomeViewController.swift in Sources */,
 				EA088E5C238D57F000CCA3EA /* TestCombinePresenterImplementation.swift in Sources */,
 				496E5C431DEEF96B0050EFB6 /* PresenterAssembly.swift in Sources */,
 				EA088E58238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift in Sources */,
@@ -874,6 +912,8 @@
 				49C3856A1F68325C0060D1E4 /* SharedTabBarController.swift in Sources */,
 				57E1CD281C884F1C00A7DFFB /* SharedViewController.swift in Sources */,
 				E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */,
+				EA088E61238D588200CCA3EA /* HomePresenter.swift in Sources */,
+				EA088E63238D588F00CCA3EA /* HomePresenterImplementation.swift in Sources */,
 				496E5C491DEEF9820050EFB6 /* HelperAssembly.swift in Sources */,
 				49595DCE1D93E11D003F1816 /* TargetSettings.swift in Sources */,
 				E7B4FDCE22FDBEF900B39055 /* ViewStyle.swift in Sources */,
