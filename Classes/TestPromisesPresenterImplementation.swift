@@ -7,4 +7,11 @@
 
 import Foundation
 
-class TestPromisesPresenterImplementation: TestPromisesPresenter {}
+class TestPromisesPresenterImplementation: TestPromisesPresenter {
+
+    private weak var viewContract: TestPromisesViewContract?
+
+    init(viewContract: TestPromisesViewContract) {
+        self.viewContract = viewContract
+    }
+}

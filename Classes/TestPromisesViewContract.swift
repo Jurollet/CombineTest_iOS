@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol TestPromisesViewContract {}
+protocol TestPromisesViewContract: class {}

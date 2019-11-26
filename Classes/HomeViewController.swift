@@ -21,8 +21,11 @@ class HomeViewController: SharedViewController, HomeViewContract {
     private func setupView() {
         let stackView = UIStackView()
         stackView.axis = .vertical
+        stackView.spacing = 96
         view.addSubview(stackView)
-        stackView.ad_pinToSuperview()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         let promisesButton = UIButton()
         promisesButton.setTitle("Promises", for: .normal)
         promisesButton.addTarget(self, action: #selector(selectPromises), for: .touchUpInside)

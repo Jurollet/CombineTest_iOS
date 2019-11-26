@@ -41,4 +41,18 @@ class DependencyProvider {
             arguments: viewContract, delegate
         )
     }
+
+    func testPromisesPresenter(viewContract: TestPromisesViewContract) -> TestPromisesPresenter? {
+        return presenterAssembler.resolver.resolve(
+            TestPromisesPresenter.self,
+            argument: viewContract
+        )
+    }
+
+    func testCombinePresenter(viewContract: TestCombineViewContract) -> TestCombinePresenter? {
+        return presenterAssembler.resolver.resolve(
+            TestCombinePresenter.self,
+            argument: viewContract
+        )
+    }
 }

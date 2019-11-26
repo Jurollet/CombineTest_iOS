@@ -7,4 +7,7 @@
 
 import Foundation
 
-class TestCombineViewController: SharedViewController, TestCombineViewContract {}
+class TestCombineViewController: SharedViewController, TestCombineViewContract {
+
+    var presenter: TestCombinePresenter?
+}

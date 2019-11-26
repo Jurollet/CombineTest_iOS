@@ -21,6 +21,7 @@ class ApplicationCoordinator: Coordinator, HomePresenterDelegate {
 
     func start() {
         let viewController = HomeViewController()
+        viewController.title = "Home"
         let presenter = DependencyProvider.shared.homePresenter(
             viewContract: viewController,
             delegate: self
@@ -33,10 +34,18 @@ class ApplicationCoordinator: Coordinator, HomePresenterDelegate {
     // MARK: - HomePresenterDelegate
 
     func homePresenterDidSelectPromises(_ presenter: HomePresenter) {
-        // todo
+        let viewController = TestPromisesViewController()
+        viewController.title = "Promises"
+        let presenter = DependencyProvider.shared.testPromisesPresenter(viewContract: viewController)
+        viewController.presenter = presenter
+        navigationController.pushViewController(viewController, animated: true)
     }
 
     func homePresenterDidSelectCombine(_ presenter: HomePresenter) {
-        // todo
+        let viewController = TestCombineViewController()
+        viewController.title = "Combine"
+        let presenter = DependencyProvider.shared.testCombinePresenter(viewContract: viewController)
+        viewController.presenter = presenter
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

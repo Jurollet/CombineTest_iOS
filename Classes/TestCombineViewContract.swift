@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol TestCombineViewContract {}
+protocol TestCombineViewContract: class {}

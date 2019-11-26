@@ -7,4 +7,11 @@
 
 import Foundation
 
-class TestCombinePresenterImplementation: TestCombinePresenter {}
+class TestCombinePresenterImplementation: TestCombinePresenter {
+
+    private weak var viewContract: TestCombineViewContract?
+
+    init(viewContract: TestCombineViewContract) {
+        self.viewContract = viewContract
+    }
+}

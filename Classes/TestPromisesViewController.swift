@@ -7,4 +7,7 @@
 
 import Foundation
 
-class TestPromisesViewController: SharedViewController, TestPromisesViewContract {}
+class TestPromisesViewController: SharedViewController, TestPromisesViewContract {
+
+    var presenter: TestPromisesPresenter?
+}
