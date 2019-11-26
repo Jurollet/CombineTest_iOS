@@ -43,7 +43,7 @@ DEPENDENCIES:
   - Watchdog (~> 5.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - ADAssertLayout
     - ADLayoutTest
     - ADUtils
@@ -78,6 +78,6 @@ SPEC CHECKSUMS:
   Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
   Watchdog: 622647e6bc5a55665e6dbae0b7831ad8d95abeab
 
-PODFILE CHECKSUM: 446f2f3e6552d97c22ef857db7b4e63adbee60ab
+PODFILE CHECKSUM: 5802c3f032c2377bbcdc536b85f069a4b7683234
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

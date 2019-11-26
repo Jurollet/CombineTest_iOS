@@ -45,6 +45,10 @@
 		E7FC27C022F1DB0C00EED267 /* MainThreadMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BD22F1DB0C00EED267 /* MainThreadMonitor.swift */; };
 		E7FC27C122F1DB0C00EED267 /* ModuleLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */; };
 		E7FC27C222F1DB0C00EED267 /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */; };
+		EA088E4C238D3FF100CCA3EA /* TestPromisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E4B238D3FF100CCA3EA /* TestPromisesViewController.swift */; };
+		EA088E4E238D3FFF00CCA3EA /* TestPromisesViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E4D238D3FFF00CCA3EA /* TestPromisesViewContract.swift */; };
+		EA088E50238D403500CCA3EA /* TestCombineViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E4F238D403500CCA3EA /* TestCombineViewContract.swift */; };
+		EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E53238D574C00CCA3EA /* TestCombineViewController.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +113,10 @@
 		E7FC27BD22F1DB0C00EED267 /* MainThreadMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThreadMonitor.swift; sourceTree = "<group>"; };
 		E7FC27BE22F1DB0C00EED267 /* ModuleLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleLauncher.swift; sourceTree = "<group>"; };
 		E7FC27BF22F1DB0C00EED267 /* CrashReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporter.swift; sourceTree = "<group>"; };
+		EA088E4B238D3FF100CCA3EA /* TestPromisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesViewController.swift; sourceTree = "<group>"; };
+		EA088E4D238D3FFF00CCA3EA /* TestPromisesViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesViewContract.swift; sourceTree = "<group>"; };
+		EA088E4F238D403500CCA3EA /* TestCombineViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineViewContract.swift; sourceTree = "<group>"; };
+		EA088E53238D574C00CCA3EA /* TestCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineViewController.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-CombineTestTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTestTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-CombineTestTests/Pods-CombineTestTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -160,6 +168,9 @@
 		495911511D7D4EF60057C974 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E44238D3FA100CCA3EA /* Home */,
+				EA088E43238D3F9A00CCA3EA /* TestCombine */,
+				EA088E42238D3F9100CCA3EA /* TestPromises */,
 				495911551D7D4F150057C974 /* Shared */,
 			);
 			name = App;
@@ -370,6 +381,79 @@
 				E7B4FDD322FDC17F00B39055 /* ViewStyle+UIWindow.swift */,
 			);
 			name = Style;
+			sourceTree = "<group>";
+		};
+		EA088E42238D3F9100CCA3EA /* TestPromises */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E47238D3FBB00CCA3EA /* Presenter */,
+				EA088E45238D3FAE00CCA3EA /* UI */,
+			);
+			name = TestPromises;
+			sourceTree = "<group>";
+		};
+		EA088E43238D3F9A00CCA3EA /* TestCombine */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E48238D3FC100CCA3EA /* Presenter */,
+				EA088E46238D3FB600CCA3EA /* UI */,
+			);
+			name = TestCombine;
+			sourceTree = "<group>";
+		};
+		EA088E44238D3FA100CCA3EA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		EA088E45238D3FAE00CCA3EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E4A238D3FD500CCA3EA /* ViewController */,
+				EA088E4D238D3FFF00CCA3EA /* TestPromisesViewContract.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EA088E46238D3FB600CCA3EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E49238D3FCE00CCA3EA /* ViewController */,
+				EA088E4F238D403500CCA3EA /* TestCombineViewContract.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		EA088E47238D3FBB00CCA3EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		EA088E48238D3FC100CCA3EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		EA088E49238D3FCE00CCA3EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E53238D574C00CCA3EA /* TestCombineViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		EA088E4A238D3FD500CCA3EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA088E4B238D3FF100CCA3EA /* TestPromisesViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -665,7 +749,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUCTUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDD5F3E9C530D463D230A81C /* [CP] Embed Pods Frameworks */ = {
@@ -676,21 +760,21 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CombineTest/Pods-CombineTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ADDynamicLogLevel/ADDynamicLogLevel.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/ADUtils/ADUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/DBDebugToolkit/DBDebugToolkit.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/Watchdog/Watchdog.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADDynamicLogLevel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DBDebugToolkit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Watchdog.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -713,7 +797,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUCTUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F54137C79E310D050E5C1F2B /* [CP] Copy Pods Resources */ = {
@@ -754,11 +838,15 @@
 				E7B4FDD422FDC17F00B39055 /* ViewStyle+UIWindow.swift in Sources */,
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
+				EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */,
 				4959115A1D7D4FE70057C974 /* Coordinator.swift in Sources */,
+				EA088E4C238D3FF100CCA3EA /* TestPromisesViewController.swift in Sources */,
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
 				E7CFD4B222F2F60B00C5B731 /* ModuleAssembly.swift in Sources */,
+				EA088E4E238D3FFF00CCA3EA /* TestPromisesViewContract.swift in Sources */,
 				57E1CD4D1C8890CA00A7DFFB /* Fonts.swift in Sources */,
 				E7B4FDD222FDBF3000B39055 /* ViewStyle+Initialization.swift in Sources */,
+				EA088E50238D403500CCA3EA /* TestCombineViewContract.swift in Sources */,
 				49F7C9F81D0EDE7100086054 /* ADFileLoggerFormatter.m in Sources */,
 				496E5C451DEEF9720050EFB6 /* InteractorAssembly.swift in Sources */,
 				49F7C9F51D0EDE6300086054 /* Logger.swift in Sources */,
@@ -953,7 +1041,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1027,7 +1115,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SDKROOT = iphoneos;
@@ -1103,7 +1191,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1179,7 +1267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROFILE_UUID_0)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
