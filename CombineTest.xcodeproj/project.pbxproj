@@ -49,6 +49,10 @@
 		EA088E4E238D3FFF00CCA3EA /* TestPromisesViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E4D238D3FFF00CCA3EA /* TestPromisesViewContract.swift */; };
 		EA088E50238D403500CCA3EA /* TestCombineViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E4F238D403500CCA3EA /* TestCombineViewContract.swift */; };
 		EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E53238D574C00CCA3EA /* TestCombineViewController.swift */; };
+		EA088E56238D57C800CCA3EA /* TestPromisesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E55238D57C800CCA3EA /* TestPromisesPresenter.swift */; };
+		EA088E58238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E57238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift */; };
+		EA088E5A238D57E200CCA3EA /* TestCombinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E59238D57E200CCA3EA /* TestCombinePresenter.swift */; };
+		EA088E5C238D57F000CCA3EA /* TestCombinePresenterImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E5B238D57F000CCA3EA /* TestCombinePresenterImplementation.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +121,10 @@
 		EA088E4D238D3FFF00CCA3EA /* TestPromisesViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesViewContract.swift; sourceTree = "<group>"; };
 		EA088E4F238D403500CCA3EA /* TestCombineViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineViewContract.swift; sourceTree = "<group>"; };
 		EA088E53238D574C00CCA3EA /* TestCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombineViewController.swift; sourceTree = "<group>"; };
+		EA088E55238D57C800CCA3EA /* TestPromisesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesPresenter.swift; sourceTree = "<group>"; };
+		EA088E57238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPromisesPresenterImplementation.swift; sourceTree = "<group>"; };
+		EA088E59238D57E200CCA3EA /* TestCombinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombinePresenter.swift; sourceTree = "<group>"; };
+		EA088E5B238D57F000CCA3EA /* TestCombinePresenterImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCombinePresenterImplementation.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-CombineTestTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTestTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-CombineTestTests/Pods-CombineTestTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -429,6 +437,8 @@
 		EA088E47238D3FBB00CCA3EA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E55238D57C800CCA3EA /* TestPromisesPresenter.swift */,
+				EA088E57238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -436,6 +446,8 @@
 		EA088E48238D3FC100CCA3EA /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				EA088E59238D57E200CCA3EA /* TestCombinePresenter.swift */,
+				EA088E5B238D57F000CCA3EA /* TestCombinePresenterImplementation.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -839,8 +851,10 @@
 				496E5C471DEEF97B0050EFB6 /* RepositoryAssembly.swift in Sources */,
 				49B3B43921DF9EB800F70BCF /* DebugToolKit.swift in Sources */,
 				EA088E54238D574C00CCA3EA /* TestCombineViewController.swift in Sources */,
+				EA088E5A238D57E200CCA3EA /* TestCombinePresenter.swift in Sources */,
 				4959115A1D7D4FE70057C974 /* Coordinator.swift in Sources */,
 				EA088E4C238D3FF100CCA3EA /* TestPromisesViewController.swift in Sources */,
+				EA088E56238D57C800CCA3EA /* TestPromisesPresenter.swift in Sources */,
 				49ADDFB51F55B4DC0072B16C /* TargetSettingsDecoder.swift in Sources */,
 				E7CFD4B222F2F60B00C5B731 /* ModuleAssembly.swift in Sources */,
 				EA088E4E238D3FFF00CCA3EA /* TestPromisesViewContract.swift in Sources */,
@@ -852,7 +866,9 @@
 				49F7C9F51D0EDE6300086054 /* Logger.swift in Sources */,
 				57E1CD491C884F8900A7DFFB /* AppDelegate.swift in Sources */,
 				E7FC27C022F1DB0C00EED267 /* MainThreadMonitor.swift in Sources */,
+				EA088E5C238D57F000CCA3EA /* TestCombinePresenterImplementation.swift in Sources */,
 				496E5C431DEEF96B0050EFB6 /* PresenterAssembly.swift in Sources */,
+				EA088E58238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift in Sources */,
 				4959115C1D7D4FFE0057C974 /* ApplicationCoordinator.swift in Sources */,
 				49C385681F6831D00060D1E4 /* SharedNavigationController.swift in Sources */,
 				49C3856A1F68325C0060D1E4 /* SharedTabBarController.swift in Sources */,
