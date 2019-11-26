@@ -8,9 +8,10 @@
 
 import Foundation
 
-class ApplicationCoordinator: Coordinator {
+class ApplicationCoordinator: Coordinator, HomePresenterDelegate {
 
     private let window: UIWindow
+    private let navigationController = SharedNavigationController()
 
     init(window: UIWindow) {
         self.window = window
@@ -19,6 +20,23 @@ class ApplicationCoordinator: Coordinator {
     // MARK: - Coordinator
 
     func start() {
-        window.rootViewController = SharedViewController()
+        let viewController = HomeViewController()
+        let presenter = DependencyProvider.shared.homePresenter(
+            viewContract: viewController,
+            delegate: self
+        )
+        viewController.presenter = presenter
+        navigationController.viewControllers = [viewController]
+        window.rootViewController = navigationController
+    }
+
+    // MARK: - HomePresenterDelegate
+
+    func homePresenterDidSelectPromises(_ presenter: HomePresenter) {
+        // todo
+    }
+
+    func homePresenterDidSelectCombine(_ presenter: HomePresenter) {
+        // todo
     }
 }

@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol HomeViewContract {}
+protocol HomeViewContract: class {}

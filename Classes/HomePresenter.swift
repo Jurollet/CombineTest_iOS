@@ -7,4 +7,12 @@
 
 import Foundation
 
-protocol HomePresenter {}
+protocol HomePresenterDelegate: class {
+    func homePresenterDidSelectPromises(_ presenter: HomePresenter)
+    func homePresenterDidSelectCombine(_ presenter: HomePresenter)
+}
+
+protocol HomePresenter {
+    func selectPromises()
+    func selectCombine()
+}

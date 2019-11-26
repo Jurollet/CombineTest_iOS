@@ -33,4 +33,12 @@ class DependencyProvider {
     }
 
     // MARK: - Presenters
+
+    func homePresenter(viewContract: HomeViewContract,
+                       delegate: HomePresenterDelegate) -> HomePresenter? {
+        return presenterAssembler.resolver.resolve(
+            HomePresenter.self,
+            arguments: viewContract, delegate
+        )
+    }
 }
