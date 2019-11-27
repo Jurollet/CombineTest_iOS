@@ -7,11 +7,38 @@
 
 import Foundation
 
-struct RestBuilding {
+struct RestBuildings: Decodable {
+    let buildings: [RestBuilding]
+
+    // MARK: - Decodable
+
+    enum CodingKeys: String, CodingKey {
+        case buildings = "features"
+    }
+}
+
+struct RestBuilding: Decodable {
+    let properties: RestBuildingProperties
+
+    var toEntity: Building {
+        return Building(id: properties.gid, type: properties.type)
+    }
+
+    // MARK: - Decodable
+
+    enum CodingKeys: String, CodingKey {
+        case properties = "properties"
+    }
+}
+
+struct RestBuildingProperties: Decodable {
     let gid: Int
     let type: String
 
-    var toEntity: Building {
-        return Building(id: gid, type: type)
+    // MARK: - Decodable
+
+    enum CodingKeys: String, CodingKey {
+        case gid = "gid"
+        case type = "type"
     }
 }
