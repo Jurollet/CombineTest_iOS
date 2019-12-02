@@ -7,4 +7,7 @@
 
 import Foundation
 
-protocol TestCombineViewContract: class {}
+protocol TestCombineViewContract: class {
+    func showUserLocation()
+    func showBuildingsCount(countString: String)
+}

@@ -17,5 +17,11 @@ class InteractorAssembly: Assembly {
                 buildingsRepository: r.resolve(BuildingsRepository.self)!
             )
         }
+
+        container.register(GetBuildingsWithCombineInteractor.self) { r in
+            GetBuildingsWithCombineInteractor(
+                buildingsRepository: r.resolve(BuildingsRepository.self)!
+            )
+        }
     }
 }

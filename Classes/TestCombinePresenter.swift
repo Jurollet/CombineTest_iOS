@@ -6,5 +6,9 @@
 //
 
 import Foundation
+import MapKit
 
-protocol TestCombinePresenter {}
+protocol TestCombinePresenter {
+    func start()
+    func updateRegion(_ region: MKMapRect)
+}

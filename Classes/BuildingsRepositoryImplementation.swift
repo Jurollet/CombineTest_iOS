@@ -8,6 +8,7 @@
 import Foundation
 import MapKit
 import PromiseKit
+import Combine
 import Alamofire
 
 private struct Constants {
@@ -22,6 +23,16 @@ class BuildingsRepositoryImplementation: BuildingsRepository {
                 in: region,
                 success: { resolver.fulfill($0) },
                 failure: { resolver.reject($0) }
+            )
+        }
+    }
+
+    func getBuildings(in region: MKCoordinateRegion) -> Future<[Building], Error> {
+        return Future { promise in
+            self.getBuildings(
+                in: region,
+                success: { promise(.success($0)) },
+                failure: { promise(.failure($0)) }
             )
         }
     }

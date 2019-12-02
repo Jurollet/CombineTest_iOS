@@ -23,8 +23,11 @@ class PresenterAssembly: Assembly {
             )
         }
 
-        container.register(TestCombinePresenter.self) { _, viewContract in
-            TestCombinePresenterImplementation(viewContract: viewContract)
+        container.register(TestCombinePresenter.self) { r, viewContract in
+            TestCombinePresenterImplementation(
+                viewContract: viewContract,
+                getBuildingsInteractor: r.resolve(GetBuildingsWithCombineInteractor.self)!
+            )
         }
     }
 }

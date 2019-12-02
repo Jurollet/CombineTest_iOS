@@ -63,6 +63,8 @@
 		EA088E74238DCBCF00CCA3EA /* BuildingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E73238DCBCF00CCA3EA /* BuildingsRepository.swift */; };
 		EA088E76238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */; };
 		EA088E78238DCBEC00CCA3EA /* RestBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA088E77238DCBEC00CCA3EA /* RestBuilding.swift */; };
+		EA4B2B77238EA91500313BF0 /* GetBuildingsWithCombineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B2B76238EA91500313BF0 /* GetBuildingsWithCombineInteractor.swift */; };
+		EA4B2B7A238EAC0F00313BF0 /* CombineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4B2B79238EAC0F00313BF0 /* CombineInteractor.swift */; };
 		EC626C5C1F9A282A001C332C /* HelveticaNeue.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */; };
 /* End PBXBuildFile section */
 
@@ -145,6 +147,8 @@
 		EA088E73238DCBCF00CCA3EA /* BuildingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsRepository.swift; sourceTree = "<group>"; };
 		EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsRepositoryImplementation.swift; sourceTree = "<group>"; };
 		EA088E77238DCBEC00CCA3EA /* RestBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestBuilding.swift; sourceTree = "<group>"; };
+		EA4B2B76238EA91500313BF0 /* GetBuildingsWithCombineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBuildingsWithCombineInteractor.swift; sourceTree = "<group>"; };
+		EA4B2B79238EAC0F00313BF0 /* CombineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineInteractor.swift; sourceTree = "<group>"; };
 		EC626C5B1F9A282A001C332C /* HelveticaNeue.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HelveticaNeue.plist; sourceTree = "<group>"; };
 		F58BBA250BE675C419ED2946 /* Pods-CombineTestTests.preproduction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineTestTests.preproduction.xcconfig"; path = "Pods/Target Support Files/Pods-CombineTestTests/Pods-CombineTestTests.preproduction.xcconfig"; sourceTree = "<group>"; };
 		F83B92161A7A8CCF009E7ADF /* Defaults-Config_Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Defaults-Config_Defaults.plist"; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 		496C4D211F67BC3A00729B15 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				EA4B2B78238EAC0500313BF0 /* Shared */,
+				EA4B2B75238EA8FE00313BF0 /* GetBuildingsWithCombine */,
 				EA088E6A238DCA4E00CCA3EA /* GetBuildingsWithPromise */,
 			);
 			name = Interactor;
@@ -544,6 +550,22 @@
 				EA088E75238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift */,
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		EA4B2B75238EA8FE00313BF0 /* GetBuildingsWithCombine */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B2B76238EA91500313BF0 /* GetBuildingsWithCombineInteractor.swift */,
+			);
+			name = GetBuildingsWithCombine;
+			sourceTree = "<group>";
+		};
+		EA4B2B78238EAC0500313BF0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EA4B2B79238EAC0F00313BF0 /* CombineInteractor.swift */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 		F83B92141A7A8CCF009E7ADF /* Configuration */ = {
@@ -944,6 +966,7 @@
 				57E1CD4D1C8890CA00A7DFFB /* Fonts.swift in Sources */,
 				EA088E76238DCBE000CCA3EA /* BuildingsRepositoryImplementation.swift in Sources */,
 				E7B4FDD222FDBF3000B39055 /* ViewStyle+Initialization.swift in Sources */,
+				EA4B2B7A238EAC0F00313BF0 /* CombineInteractor.swift in Sources */,
 				EA088E50238D403500CCA3EA /* TestCombineViewContract.swift in Sources */,
 				49F7C9F81D0EDE7100086054 /* ADFileLoggerFormatter.m in Sources */,
 				496E5C451DEEF9720050EFB6 /* InteractorAssembly.swift in Sources */,
@@ -955,6 +978,7 @@
 				496E5C431DEEF96B0050EFB6 /* PresenterAssembly.swift in Sources */,
 				EA088E58238D57D600CCA3EA /* TestPromisesPresenterImplementation.swift in Sources */,
 				4959115C1D7D4FFE0057C974 /* ApplicationCoordinator.swift in Sources */,
+				EA4B2B77238EA91500313BF0 /* GetBuildingsWithCombineInteractor.swift in Sources */,
 				49C385681F6831D00060D1E4 /* SharedNavigationController.swift in Sources */,
 				49C3856A1F68325C0060D1E4 /* SharedTabBarController.swift in Sources */,
 				57E1CD281C884F1C00A7DFFB /* SharedViewController.swift in Sources */,

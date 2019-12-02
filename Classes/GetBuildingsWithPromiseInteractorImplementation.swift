@@ -18,6 +18,8 @@ class GetBuildingsWithPromiseInteractorImplementation: GetBuildingsWithPromiseIn
     }
 
     func execute(with region: MKCoordinateRegion) -> Promise<[Building]> {
-        return buildingsRepository.getBuildings(in: region)
+        return buildingsRepository.getBuildings(in: region).filterValues {
+            $0.type == "Bâti léger"
+        }
     }
 }
